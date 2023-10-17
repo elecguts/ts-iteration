@@ -44,7 +44,7 @@ function yelling(words: string[]): string[] {
 
 function doubleTrouble(numbers: number[]): number[] {
   // Replace the code below with your own code
-  return []
+  return numbers.map(n => n * 2)
 }
 
 /*
@@ -58,7 +58,7 @@ function doubleTrouble(numbers: number[]): number[] {
 
 function stringyIndexes(strings: string[]): string[] {
   // Replace the code below with your own code
-  return []
+  return strings.map(s => s + ` is at index ${strings.indexOf(s)}`)
 }
 
 /*
