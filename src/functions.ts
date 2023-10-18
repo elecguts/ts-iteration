@@ -114,7 +114,9 @@ function bestMoviesOfTheYear(
   year: number
 ): string[] {
   // Replace the code below with your own code
-  return []
+  return movieObjectArray
+    .filter(movie => movie.year === year && movie.score > 90)
+    .map(movie => movie.name)
 }
 
 /*
