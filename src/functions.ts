@@ -144,7 +144,7 @@ function everyoneIsOdd(numbers: number[]): boolean {
 
 function findTheNeedle(strings: string[]): string {
   // Replace the code below with your own code
-  return strings.find(s => s.includes('needle') === true) as string
+  return strings.find(s => s.includes('needle')) as string
 }
 
 /*
@@ -158,7 +158,7 @@ function findTheNeedle(strings: string[]): string {
 
 function findTheNeedleIndex(strings: string[]): number {
   // Replace the code below with your own code
-  return 42
+  return strings.findIndex(s => s.includes('needle'))
 }
 
 /*
@@ -172,7 +172,7 @@ function findTheNeedleIndex(strings: string[]): number {
 
 function someoneToLove(strings: string[]): boolean {
   // Replace the code below with your own code
-  return false
+  return strings.some(s => s.length === 4)
 }
 
 /*
