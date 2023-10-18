@@ -130,7 +130,7 @@ function bestMoviesOfTheYear(
 
 function everyoneIsOdd(numbers: number[]): boolean {
   // Replace the code below with your own code
-  return false
+  return numbers.every(n => n % 2 === 1)
 }
 
 /*
@@ -144,7 +144,7 @@ function everyoneIsOdd(numbers: number[]): boolean {
 
 function findTheNeedle(strings: string[]): string {
   // Replace the code below with your own code
-  return ''
+  return strings.find(s => s.includes('needle') === true) as string
 }
 
 /*
