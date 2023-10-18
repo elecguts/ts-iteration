@@ -58,7 +58,7 @@ function doubleTrouble(numbers: number[]): number[] {
 
 function stringyIndexes(strings: string[]): string[] {
   // Replace the code below with your own code
-  return strings.map(s => s + ` is at index ${strings.indexOf(s)}`)
+  return strings.map((s, index) => s + ` is at index ${index}`)
 }
 
 /*
@@ -71,7 +71,7 @@ function stringyIndexes(strings: string[]): string[] {
 
 function onlyTheEvenSurvive(numbers: number[]): number[] {
   // Replace the code below with your own code
-  return []
+  return numbers.filter(n => n % 2 === 0)
 }
 
 /*
@@ -84,7 +84,7 @@ function onlyTheEvenSurvive(numbers: number[]): number[] {
 
 function onlyTheEvenIndexedSurvive(numbers: number[]): number[] {
   // Replace the code below with your own code
-  return []
+  return numbers.filter((n, index) => index % 2 === 0)
 }
 
 /*
